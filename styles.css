@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lobster Two", cursive;
+}
+
+body {
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+  background: #fc4a1a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f7b733,
+    #fc4a1a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f7b733,
+    #fc4a1a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  color: #6dd5fa;
+}
+
+.scoreBoard {
+  border: 0.2rem solid white;
+  width: 15rem;
+  margin: 1.3rem auto;
+  color: white;
+  font-size: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.2rem 1.6rem;
+  position: relative;
+}
+
+.badge {
+  background: #eb1d31;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+}
+
+#user-label {
+  left: -1.75rem;
+}
+
+#computer-label {
+  right: -1.75rem;
+}
+
+#user-label,
+#computer-label {
+  position: absolute;
+  top: 1rem;
+}
+
+.result,
+#message {
+  font-size: 2.5rem;
+  color: #fc4a1a;
+}
+
+.result p {
+  text-align: center;
+  font-weight: 800;
+}
+
+#message {
+  text-align: center;
+  font-weight: 800;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.choice {
+  border: 0.2rem solid whitesmoke;
+  border-radius: 50%;
+  margin: 0rem 1.5rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.choice:hover {
+  background: white;
+  /* box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.4); */
+}
+
+.green {
+  /* border: 0.5rem solid #4dcc7d; */
+  box-shadow: 0 0 10px 5px rgba(49, 180, 58, 1);
+}
+
+.red {
+  /* border: 0.5rem solid #fc121b; */
+  box-shadow: 0 0 10px 5px rgba(208, 17, 21, 1);
+}
+
+.gray {
+  /* border: 0.5rem solid #464647; */
+  box-shadow: 0 0 10px 5px rgba(37, 41, 43, 1);
+}
+
+#message {
+  font-size: 1.5rem;
+}
