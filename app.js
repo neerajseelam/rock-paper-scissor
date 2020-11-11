@@ -31,7 +31,7 @@ function win(user, computer) {
   computerChoice_div = document.getElementById(computer);
   result_p.innerHTML = `${capitalizeFirstCharacter(
     user
-  )} beats ${capitalizeFirstCharacter(computer)}. You win!!! 🚀🚀🚀 `;
+  )} beats ${capitalizeFirstCharacter(computer)}. You win!!! 🚀 `;
   userChoice_div.classList.add("green");
   setTimeout(() => userChoice_div.classList.remove("green"), 500);
   computerChoice_div.classList.add("red");
@@ -46,7 +46,7 @@ function lose(user, computer) {
   computerChoice_div = document.getElementById(computer);
   result_p.innerHTML = `${capitalizeFirstCharacter(user)}
      lost to
-    ${capitalizeFirstCharacter(computer)}. Computer wins!!! 🚀🚀🚀 `;
+    ${capitalizeFirstCharacter(computer)}. Computer wins!!! 🚀 `;
   userChoice_div.classList.add("red");
   setTimeout(() => userChoice_div.classList.remove("red"), 500);
   computerChoice_div.classList.add("green");
@@ -57,7 +57,7 @@ function draw(user, computer) {
   result_p.innerHTML = `${capitalizeFirstCharacter(user)}
      equals
     ${capitalizeFirstCharacter(computer)} 
-    . Its a draw ⌛⌛⌛ `;
+    . Its a draw ⌛ `;
   userChoice_div = document.getElementById(user);
   userChoice_div.classList.add("gray");
   setTimeout(() => userChoice_div.classList.remove("gray"), 500);

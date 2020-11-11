@@ -7,6 +7,11 @@
   font-family: "Lobster Two", cursive;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background: #2980b9; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -36,6 +41,7 @@ header {
     #fc4a1a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 1rem;
+  position: relative;
 }
 
 header h1 {
@@ -43,6 +49,13 @@ header h1 {
   color: #6dd5fa;
 }
 
+.container {
+  min-height: 84.5%;
+}
+
+.main {
+  overflow: hidden;
+}
 .scoreBoard {
   border: 0.2rem solid white;
   width: 15rem;
@@ -79,11 +92,11 @@ header h1 {
 
 .result,
 #message {
-  font-size: 2.5rem;
   color: #fc4a1a;
 }
 
 .result p {
+  font-size: clamp(2.5rem, 2.5vw, 1.2rem);
   text-align: center;
   font-weight: 800;
 }
@@ -97,7 +110,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -105,7 +118,6 @@ header h1 {
   border: 0.2rem solid whitesmoke;
   border-radius: 50%;
   margin: 0rem 1.5rem;
-  padding: 0.6rem;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
@@ -131,5 +143,76 @@ header h1 {
 }
 
 #message {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 1rem);
+  margin-bottom: 4rem;
+}
+
+footer {
+  background: #2ec4b6;
+  clear: both;
+}
+
+.footer_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.socialMedia {
+  width: 100%;
+}
+
+.socialMedia_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem auto 0 auto;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.socialMedia_wrap ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.socialMedia_wrap a {
+  color: #fff;
+  margin: 0.4rem;
+  text-decoration: none;
+}
+.socialMedia_icons a {
+  color: #fff;
+  margin: 0.4rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+  .scoreBoard {
+    width: 10rem;
+  }
+
+  .result p {
+    font-size: clamp(2.5rem, 2.5vw, 1.2rem);
+  }
+  .choices {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .choice {
+    margin: 0.5rem;
+  }
+
+  .socialMedia_wrap {
+    flex-direction: column;
+  }
+
+  .socialMedia_wrap a,
+  p,
+  ul {
+    margin: 0.3rem;
+  }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <script src="app.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Rock Paper Scissors</h1>
     </header>
-    <div class="scoreBoard">
-        <div class="badge" id="user-label"><i class="fas fa-user-alt"></i></div>
-        <div class="badge" id="computer-label"><i class="fas fa-robot"></i></div>
-        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    <div class="container">
+        <div class="main">
+            <div class="scoreBoard">
+                <div class="badge" id="user-label"><i class="fas fa-user-alt"></i></div>
+                <div class="badge" id="computer-label"><i class="fas fa-robot"></i></div>
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
+            <div class="result">
+                <p>Paper covers rock. You win</p>
+            </div>
+            <div class="choices">
+                <div class="choice" id="rock"><img src="images/rock.png" alt="Rock"></div>
+                <div class="choice" id="paper"><img src="images/paper.png" alt="Paper"></div>
+                <div class="choice" id="scissor"><img src="images/scissor.png" alt="Scissor"></div>
+            </div>
+            <p id="message">Make your move</p>
+        </div>
     </div>
-    <div class="result">
-        <p>Paper covers rock. You win</p>
-    </div>
-    <div class="choices">
-        <div class="choice" id="rock"><img src="images/rock.png" alt="Rock"></div>
-        <div class="choice" id="paper"><img src="images/paper.png" alt="Paper"></div>
-        <div class="choice" id="scissor"><img src="images/scissor.png" alt="Scissor"></div>
-    </div>
-    <p id="message">Make your move</p>
+    <footer>
+        <div class="footer_wrap">
+            <section class="socialMedia">
+                <div class="socialMedia_wrap">
+                    <a href="/">Rock, Paper & Scissors</a>
+                    <p>Made with ❤️️ by Neeraj</p>
+                    <ul class="socialMedia_icons">
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
 </body>
+
 </html>
